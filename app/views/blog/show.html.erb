@@ -1,0 +1,7 @@
+<h1> <%= @blog_post.title %></h1>
+<h5> <%= @blog_post.content %></h5>
+<%= link_to "Home", all_blogs_path %>
+
+<%= link_to "Delete", delete_path, action: 'destroy', method: :delete%>
+
+<%= link_to "EDIT", edit_path(@blog_post), action: 'edit', method: :edit%>

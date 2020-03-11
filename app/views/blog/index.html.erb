@@ -1,0 +1,12 @@
+<h1>Blog news</h1>
+<h2>news</h2>
+
+<ul>
+  <% @blog_posts.each do |blog| %>
+  <li>
+    <%= link_to blog.title, one_blog_path(blog)%>
+  </li>
+  <% end %>
+</ul>
+
+<button type="button"><%= link_to "Create New Blog", click_path%></button>

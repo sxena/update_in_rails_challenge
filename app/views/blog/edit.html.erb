@@ -1,0 +1,9 @@
+<%= form_for update_path do |blog| %>
+  <%=  'Title' %> <br>
+  <%= blog.text_field :title %><br>
+
+  <%=  'Content'%><br>
+  <%= blog.text_area :content %><br>
+
+  <%= link_to 'UPDATE', update_path(@blog_post), action: 'update', method: :update%>
+<% end %>
